@@ -17,7 +17,7 @@ const page = () => {
                         alt="Logo"
                         width={763}
                         height={173}
-                        className="mt-20 w-[360px] h-[180px] z-0 pointer-events-none select-none opacity-80" />
+                        className="mt-20 w-[360px] h-[180px] z-0 pointer-events-none select-none opacity-90" />
                     <p className='text-2xl md:text-3xl text-balance z-10'>
                         The <span className='bg-[#af3f72] px-2 font-bold text-white'>ULTIMATE</span> chat app
                     </p>

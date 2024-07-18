@@ -31,15 +31,20 @@ const PreferencesTab = () => {
         <MoonIcon className="size-[1.2rem] text-muted-foreground"/>
       </Button>
 
-      <Button variant={"outline"} size={"icon"} 
-      onClick={()=>{
-        setSoundEnabled(!soundEnabled)
-        soundEnabled ?  playSoundOn() : playSoundOff();
-      }}
-      >
-        {soundEnabled ? (<Volume2 className="size-[1.2rem] text-muted-foreground"/>) : (<VolumeX className="size-[1.2rem] text-muted-foreground"/>)}
-        
-      </Button>
+      <Button
+				variant={"outline"}
+				size={"icon"}
+				onClick={() => {
+					setSoundEnabled(!soundEnabled);
+					soundEnabled ? playSoundOff() : playSoundOn();
+				}}
+			>
+				{soundEnabled ? (
+					<Volume2 className='size-[1.2rem] text-muted-foreground' />
+				) : (
+					<VolumeX className='size-[1.2rem] text-muted-foreground' />
+				)}
+			</Button>
     </div>
   )
 }
