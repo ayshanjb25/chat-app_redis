@@ -8,4 +8,4 @@ type Preferences = {
 export const usePreferences = create<Preferences>((set) => ({
   soundEnabled: true,
   setSoundEnabled: (soundEnabled:boolean) => set({ soundEnabled}),
-}))
+}));

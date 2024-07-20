@@ -2,8 +2,8 @@
 import { Button } from './ui/button'
 import { SunIcon, MoonIcon,Volume2, VolumeX } from 'lucide-react'
 import { useTheme } from "next-themes";
-import { usePreferences } from '@/store/usePreferences';
 import { useSound } from 'use-sound';
+import { usePreferences } from '@/store/usePreferences';
 
 const PreferencesTab = () => {
   const { setTheme } = useTheme();
